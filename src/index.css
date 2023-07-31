@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 10px;
+  font-family: sans-serif;
+}
+.login-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.login_backgroud-image {
+  background-color: #87c1cc;
+  height: 100vh;
+}
