@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,14 +6,27 @@
 }
 body {
   font-size: 10px;
-  font-family: sans-serif;
-}
-.login-container {
-  width: 100vw;
-  height: 100vh;
+  font-family: "Nunito", sans-serif;
 }
 
-.login_backgroud-image {
+.login-container--right {
   background-color: #87c1cc;
-  height: 100vh;
 }
+
+@media screen and (min-width: 768px) {
+  .login-container--left {
+    height: 100vh;
+  }
+
+  .login-container--right {
+    height: 100vh;
+    background-color: #87c1cc;
+  }
+}
+
+/* .login-container {
+  width: 100vw;
+  height: 100vh;
+} */
+
+
