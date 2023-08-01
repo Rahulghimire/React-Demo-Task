@@ -16,7 +16,8 @@ const Login = () => {
             <p className="header_text-one m-0">Welcome to</p>
             <p className="header_text-two">SPYRA <span className="header_text-three">Commerce</span> </p>
           </div>
-          <Form>
+          <div>
+          <Form className="login-form">
           <Form.Group className="mb-4" controlId="Form.ControlInput1">
               <Form.Label>Enter your company code</Form.Label>
               <Form.Control type="number" placeholder="Enter company code" style={{  minWidth: '17rem' }} min={0}/>
@@ -41,6 +42,7 @@ const Login = () => {
             <button className="signIn-button">Sign In</button>
             </Form.Group>
           </Form>
+          </div>
         </div>
         <div className="col-12 col-md-6  d-none d-md-flex flex-column align-items-center justify-content-center login-container--right">
           <div className="login_backgroud-image">
@@ -49,7 +51,6 @@ const Login = () => {
         </div>
       </div>
       <div>
-        <Spinner/>
       </div>
     </section>
   );

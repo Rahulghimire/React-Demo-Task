@@ -5,12 +5,13 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./components/Login";
+import { LoadingScreen } from "./components/LoadingScreen";
 
 function App() {
   return (
-    <>
-      <Login />
-    </>
+    <div className="App">
+    <LoadingScreen/>
+    </div>
   );
 }
 
