@@ -10,23 +10,19 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
-.login-container--left {
-  height: 100vh;
-}
-
 .login-container--right {
   background-color: #87c1cc;
 }
 
-/* .login-container--left {
+.login-container--left {
+  height: 100vh;
   position: relative;
-  background-image: url("./assets/logo-t.svg");
+  background-image: url("./assets/logo-img.avif");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: auto;
   opacity: 0.8;
-  z-index: -1;
-} */
+}
 
 .header_text-one {
   font-weight: 600;
@@ -46,26 +42,23 @@ body {
 
 .login-form {
   position: relative;
-  z-index: 1;
 }
 
 .form-label {
   color: #0e0b0c;
   font-weight: 700;
   position: relative;
-  z-index: 3;
 }
 
 .form-control {
   position: relative;
-  z-index: 3;
   padding: 0.375rem 1.2rem;
   border: var(--bs-border-width) solid #0f849b;
 }
 
 .btn-primary {
   --bs-btn-color: #453f3f;
-  --bs-btn-bg: none;
+  --bs-btn-bg: #fff;
   --bs-btn-border-color: #0f849b;
   border-left: none;
 }

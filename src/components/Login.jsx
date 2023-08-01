@@ -66,13 +66,13 @@ const Login = () => {
           <div className="text-center py-1">
             <p className="header_text-one m-0">Welcome to</p>
             <p className="header_text-two">
-              SPYRA <span className="header_text-three">Commerce</span>{" "}
+              SPYRA <span className="header_text-three">Commerce</span>
             </p>
           </div>
           <div>
             <Form className="login-form">
               <Form.Group className="mb-4" controlId="Form.ControlInput1">
-                <Form.Label>Enter your company code</Form.Label>
+                <Form.Label>Enter your company code </Form.Label>
                 <Form.Control
                   type="number"
                   placeholder="Enter company code"
@@ -135,7 +135,6 @@ const Login = () => {
           </div>
         </div>
       </div>
-      <div></div>
     </section>
   );
 };
