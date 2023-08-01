@@ -16,6 +16,12 @@ function App() {
           <Route path="/" element={<LoadingScreen />} />
           <Route path="/login" element={<Login />} />
           <Route path="/home" element={<Home />} />
+          <Route
+            path="*"
+            element={
+              <h1 className="text-center text-warning">Page not Found!!</h1>
+            }
+          />
         </Routes>
       </Router>
     </div>

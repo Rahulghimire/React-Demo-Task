@@ -18,7 +18,7 @@ body {
   background-color: #87c1cc;
 }
 
-.login-container--left {
+/* .login-container--left {
   position: relative;
   background-image: url("./assets/logo-t.svg");
   background-repeat: no-repeat;
@@ -26,7 +26,7 @@ body {
   background-size: auto;
   opacity: 0.8;
   z-index: -1;
-}
+} */
 
 .header_text-one {
   font-weight: 600;

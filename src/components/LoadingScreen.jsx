@@ -3,9 +3,6 @@ import { HashLoader } from "react-spinners";
 import { useNavigate } from "react-router-dom";
 
 export const LoadingScreen = () => {
-  const [userName, setUserName] = useState("");
-  const [password, setPassword] = useState("");
-
   const navigate = useNavigate();
 
   const [loading, setLoading] = useState(false);
