@@ -5,6 +5,7 @@ import Form from "react-bootstrap/Form";
 import { Button ,InputGroup} from "react-bootstrap";
 import { FaEye,FaEyeSlash } from 'react-icons/fa';
 import { Link } from "react-router-dom";
+
 const Login = () => {
  const[showPassword,setShowPassword]= useState(false);
   return (
@@ -16,7 +17,11 @@ const Login = () => {
             <p className="header_text-two">SPYRA <span className="header_text-three">Commerce</span> </p>
           </div>
           <Form>
-            <Form.Group className="mb-4" controlId="Form.ControlInput1">
+          <Form.Group className="mb-4" controlId="Form.ControlInput1">
+              <Form.Label>Enter your company code</Form.Label>
+              <Form.Control type="number" placeholder="Enter company code" style={{  minWidth: '17rem' }} min={0}/>
+            </Form.Group>
+            <Form.Group className="mb-4" controlId="Form.ControlInput2">
               <Form.Label>Enter your username or email address</Form.Label>
               <Form.Control type="email" placeholder="Username or email address" style={{  minWidth: '17rem' }} />
             </Form.Group>
@@ -42,6 +47,9 @@ const Login = () => {
             <img src={Logo} alt="Logo" className="img-fluid" />
           </div>
         </div>
+      </div>
+      <div>
+        <Spinner/>
       </div>
     </section>
   );
