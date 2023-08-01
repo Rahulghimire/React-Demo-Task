@@ -5,20 +5,12 @@
   box-sizing: border-box;
 }
 
-.App{
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-}
-
 body {
   font-size: 10px;
   font-family: "Nunito", sans-serif;
 }
 
-.login-container--left{
+.login-container--left {
   height: 100vh;
 }
 
@@ -26,32 +18,33 @@ body {
   background-color: #87c1cc;
 }
 
-/* .login-container--left{
-  position: relative; 
+.login-container--left {
+  position: relative;
   background-image: url("./assets/logo-t.svg");
   background-repeat: no-repeat;
-  background-position: center center; 
+  background-position: center center;
   background-size: auto;
   opacity: 0.8;
   z-index: -1;
-} */
+}
 
-.header_text-one{
+.header_text-one {
   font-weight: 600;
   font-size: 1.8rem;
   color: #060808;
 }
 
-.header_text-two,.header_text-three{
+.header_text-two,
+.header_text-three {
   font-weight: 700;
   font-size: 1.8rem;
   color: #db5181;
 }
-.header_text-three{
+.header_text-three {
   color: #3c7d86;
 }
 
-.login-form{
+.login-form {
   position: relative;
   z-index: 1;
 }
@@ -63,7 +56,7 @@ body {
   z-index: 3;
 }
 
-.form-control{
+.form-control {
   position: relative;
   z-index: 3;
   padding: 0.375rem 1.2rem;
@@ -74,15 +67,15 @@ body {
   --bs-btn-color: #453f3f;
   --bs-btn-bg: none;
   --bs-btn-border-color: #0f849b;
-  border-left: none; 
+  border-left: none;
 }
 
-::placeholder{
+::placeholder {
   color: #d2d2d2;
   font-size: 0.6rem;
 }
 
-.signIn-button{
+.signIn-button {
   width: 100%;
   background-color: #0e839d;
   color: #fff;
@@ -94,12 +87,16 @@ body {
 }
 
 /* loader */
-/* .loader{
+.loader {
   display: flex;
   height: 100vh;
   width: 100%;
-} */
-
+  align-items: center;
+  justify-content: center;
+}
+.loader span {
+  text-align: center;
+}
 @media screen and (min-width: 768px) {
   .login-container--left {
     height: 100vh;
@@ -115,5 +112,3 @@ body {
   width: 100vw;
   height: 100vh;
 } */
-
-
