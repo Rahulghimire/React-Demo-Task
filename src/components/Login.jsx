@@ -6,8 +6,11 @@ import { Button, InputGroup } from "react-bootstrap";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Login = () => {
+  const { loginWithRedirect } = useAuth0();
+
   const [showPassword, setShowPassword] = useState(false);
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
@@ -122,8 +125,16 @@ const Login = () => {
                 </div>
               </Form.Group>
               <Form.Group>
-                <button className="signIn-button" onClick={handleLogin}>
+                <button className="signIn-button mb-2" onClick={handleLogin}>
                   Sign In
+                </button>
+              </Form.Group>
+              <Form.Group>
+                <button
+                  className="signIn-button"
+                  onClick={() => loginWithRedirect()}
+                >
+                  Auth0 LogIn
                 </button>
               </Form.Group>
             </Form>
